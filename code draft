@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h1>Code Generate</h1>
+
+<p>Generate Code:</p>
+
+<button onclick="document.getElementById('demo').innerHTML = makeid(1,1000)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+</script>
+
+</body>
+</html>
